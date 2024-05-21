@@ -1,13 +1,16 @@
 ---
-import { StickyDemo } from '@/components/scroll-reveal';
-import Header from '@/components/Header.astro';
-import Navbar from '@/components/Navbar';
-import Layout from '@/layouts/Layout.astro';
+import { StickyDemo } from "@/components/scroll-reveal";
+import Header from "@/components/Header.astro";
+import Navbar from "@/components/Navbar";
+import Layout from "@/layouts/Layout.astro";
+import Footer from "@/components/Footer.astro";
+import AboutUs from "@/components/AboutUs.astro";
 ---
 
-<Layout title='Inicio'>
-	<Navbar client:load/>
-	<Header/>
-	<StickyDemo client:load/>
-	<Header/>
+<Layout title="Inicio">
+  <Navbar client:load />
+  <Header />
+  <StickyDemo client:load />
+  <AboutUs />
+  <Footer />
 </Layout>
