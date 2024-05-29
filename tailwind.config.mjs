@@ -30,7 +30,32 @@ export default {
       },
     },
   },
-  plugins: [addVariablesForColors, require("daisyui")],
+  plugins: [
+    addVariablesForColors,
+    require("daisyui"),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".scrollbar-thin": {
+          scrollbarWidth: "thin",
+          scrollbarColor: "rgb(229 231 235) transparent",
+        },
+        ".scrollbar-webkit": {
+          "&::-webkit-scrollbar": {
+            width: "8px",
+          },
+          "&::-webkit-scrollbar-track": {
+            background: "transparent",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            background: "rgb(229 231 235)",
+            borderRadius: "20px",
+            border: "1px solid white",
+          },
+        },
+      }
+      addUtilities(newUtilities, ["responsive", "hover"])
+    },
+  ],
   daisyui: {
     themes: [],
   },
