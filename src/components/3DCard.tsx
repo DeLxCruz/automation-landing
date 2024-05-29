@@ -4,11 +4,29 @@ interface ThreeDCardProps {
   title: string;
   description: string;
   imageUrl: string;
+  idModal: string;
+  sub1: string;
+  sub2: string;
+  sub3: string;
+  item1: string;
+  item2: string;
+  item3: string;
 }
 
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
-export function ThreeDCardDemo({ title, description, imageUrl }: ThreeDCardProps) {
+export function ThreeDCardDemo({
+  title,
+  description,
+  imageUrl,
+  idModal,
+  item1,
+  item2,
+  item3,
+  sub1,
+  sub2,
+  sub3,
+}: ThreeDCardProps) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -34,25 +52,37 @@ export function ThreeDCardDemo({ title, description, imageUrl }: ThreeDCardProps
             alt="thumbnail"
           />
         </CardItem>
-        <div className="flex justify-between items-center mt-20">
-          <CardItem
-            translateZ={20}
-            as="a"
-            href="https://twitter.com/mannupaaji"
-            target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-          >
-            Try now →
-          </CardItem>
+        <div className="flex flex-row-reverse items-center mt-20">
           <CardItem
             translateZ={20}
             as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+            className="btn px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+            onClick={() =>
+              (
+                document.getElementById(idModal) as HTMLDialogElement
+              )?.showModal()
+            }
           >
-            Sign up
+            Saber más
           </CardItem>
         </div>
       </CardBody>
+      <dialog id={idModal} className="modal">
+        <div className="modal-box bg-[#374151]">
+          <h3 className="font-bold text-lg">Caracteristicas</h3>
+          <ul className="py-4 pl-7 space-y-4 list-disc">
+            <li><span className="font-bold">{sub1}</span> {item1}</li>
+            <li><span className="font-bold">{sub2}</span> {item2}</li>
+            <li><span className="font-bold">{sub3}</span> {item3}</li>
+          </ul>
+          <div className="modal-action">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </CardContainer>
   );
 }

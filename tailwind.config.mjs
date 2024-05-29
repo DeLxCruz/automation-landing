@@ -57,7 +57,7 @@ export default {
     },
   ],
   daisyui: {
-    themes: [],
+    themes: false,
   },
   themeRoot: ":root",
 };

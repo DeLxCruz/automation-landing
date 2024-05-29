@@ -44,7 +44,7 @@ const content = [
 ];
 export function StickyDemo() {
   return (
-    <div className="p-10">
+    <div className="max-md:p-0 p-10">
       <StickyScroll content={content} />
     </div>
   );

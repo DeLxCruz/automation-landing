@@ -2,29 +2,57 @@
 import { ThreeDCardDemo } from "@/components/3DCard";
 ---
 
-<section class="grid grid-cols-2 gap-12">
+<section class="max-lg:grid-cols-1 max-lg:gap-4 grid grid-cols-2 gap-8">
   <ThreeDCardDemo
     title="Amazon Echo"
     description="Un altavoz inteligente que permite controlar dispositivos inteligentes con tu voz, reproducir música, configurar alarmas y más."
     imageUrl="/img/Domotica-con-alexa-asistentes.png"
+    idModal="my_modal_1"
+    sub1="Voz: "
+    sub2="Conectividad: "
+    sub3="Diseño: "
+    item1="Controla tu hogar inteligente con tu voz, reproduce música, configura alarmas y más."
+    item2="Wi-Fi y Bluetooth para una experiencia fluida."
+    item3="Elegante y compacto, se adapta a cualquier estilo de decoración."
     client:load
   />
   <ThreeDCardDemo
     title="Google Nest Hub"
     description="Una pantalla inteligente que te permite controlar dispositivos inteligentes, ver videos, configurar alarmas y más."
     imageUrl="/img/Domotica-con-google-home-asistentes.png"
+    idModal="my_modal_2"
+    sub1="Voz: "
+    sub2="Conectividad: "
+    sub3="Diseño: "
+    item1="Información: Muestra información útil como el clima, las noticias y tu calendario."
+    item2="Control: Controla dispositivos inteligentes, reproduce videos y configura alarmas."
+    item3="Asistente de voz: Integrado con Google Assistant para comandos de voz intuitivos."
     client:load
   />
   <ThreeDCardDemo
     title="Nest Learning Thermostat"
     description="Un termostato que aprende tus preferencias y programa tu hogar automáticamente para ahorrar energía."
     imageUrl="/img/google-nest.webp"
+    idModal="my_modal_3"
+    sub1="Ahorro de energía: "
+    sub2="Conectividad: "
+    sub3="Control remoto: "
+    item1="Aprende tus preferencias y programa tu hogar automáticamente para ahorrar energía."
+    item2="Funciona con la mayoría de los sistemas de calefacción y aire acondicionado."
+    item3="Controla desde tu teléfono inteligente o tableta."
     client:load
   />
   <ThreeDCardDemo
     title="Yale Assure Lock"
     description="Una cerradura inteligente que puedes bloquear y desbloquear desde tu teléfono inteligente, con tu voz o con tu huella digital."
     imageUrl="/img/Yale-Assure-Lock-SL-Cerradura-de-puerta-con-pantalla-tactil-sin-llave.jpg"
+    idModal="my_modal_4"
+    sub1="Acceso sin llave: "
+    sub2="Seguridad: "
+    sub3="Integración: "
+    item1="Bloquea y desbloquea tu puerta con tu teléfono inteligente, voz o huella digital."
+    item2="Diseño resistente a la intemperie y mecanismos de seguridad avanzados."
+    item3="Compatible con Amazon Alexa, Google Assistant y Apple HomeKit."
     client:load
   />
 </section>
