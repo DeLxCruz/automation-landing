@@ -4,7 +4,7 @@ const content = [
   {
     title: "Ahorro Energético",
     description:
-      "Optimiza el consumo de energía en tu hogar con soluciones inteligentes que te ayudan a reducir costos y minimizar el impacto ambiental.",
+      "La domótica optimiza el consumo de energía al regular inteligentemente el uso de dispositivos en el hogar. Desde ajustar la temperatura según la ocupación hasta apagar luces automáticamente, reduce el desperdicio y los costos eléctricos.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         Collaborative Editing
@@ -14,7 +14,7 @@ const content = [
   {
     title: "Seguridad",
     description:
-      "Protege lo que más importa con sistemas de seguridad avanzados que ofrecen vigilancia continua y notificaciones instantáneas para tu tranquilidad.",
+      "Con sistemas de vigilancia inteligente y alarmas conectadas, la domótica protege tu hogar. Los sensores de intrusión y las cerraduras electrónicas garantizan tu tranquilidad, mientras que el monitoreo remoto te permite actuar rápidamente ante cualquier amenaza.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         Seguridad
@@ -24,7 +24,7 @@ const content = [
   {
     title: "Confort",
     description:
-      "En el mundo de la domótica, el confort es la clave para crear un hogar a medida de tus necesidades. Desde ajustar la temperatura y la iluminación hasta personalizar la música y los ambientes, la domótica te brinda el control total para hacer que cada momento en casa sea perfecto para ti.",
+      "La domótica crea un ambiente personalizado y acogedor. Desde el control de la temperatura y la iluminación hasta la reproducción de música, adapta tu hogar a tus preferencias individuales para mejorar tu calidad de vida.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         Version control
