@@ -1,4 +1,5 @@
 "use client";
+import React from 'react';
 
 interface ThreeDCardProps {
   title: string;
@@ -13,7 +14,7 @@ interface ThreeDCardProps {
   item3: string;
 }
 
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 
 export function ThreeDCardDemo({
   title,
