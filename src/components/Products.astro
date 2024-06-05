@@ -1,58 +1,120 @@
 ---
-import { ThreeDCardDemo } from "@/components/3DCard";
+import { ThreeDCardDemo } from "./3DCard.tsx";
 ---
 
-<section class="max-lg:grid-cols-1 max-lg:gap-4 grid grid-cols-2 gap-8">
-  <ThreeDCardDemo
-    title="Amazon Echo"
-    description="Un altavoz inteligente que permite controlar dispositivos inteligentes con tu voz, reproducir música, configurar alarmas y más."
-    imageUrl="/img/Domotica-con-alexa-asistentes.png"
-    idModal="my_modal_1"
-    sub1="Voz: "
-    sub2="Conectividad: "
-    sub3="Diseño: "
-    item1="Controla tu hogar inteligente con tu voz, reproduce música, configura alarmas y más."
-    item2="Wi-Fi y Bluetooth para una experiencia fluida."
-    item3="Elegante y compacto, se adapta a cualquier estilo de decoración."
-    client:load
-  />
-  <ThreeDCardDemo
-    title="Google Nest Hub"
-    description="Una pantalla inteligente que te permite controlar dispositivos inteligentes, ver videos, configurar alarmas y más."
-    imageUrl="/img/Domotica-con-google-home-asistentes.png"
-    idModal="my_modal_2"
-    sub1="Voz: "
-    sub2="Conectividad: "
-    sub3="Diseño: "
-    item1="Información: Muestra información útil como el clima, las noticias y tu calendario."
-    item2="Control: Controla dispositivos inteligentes, reproduce videos y configura alarmas."
-    item3="Asistente de voz: Integrado con Google Assistant para comandos de voz intuitivos."
-    client:load
-  />
-  <ThreeDCardDemo
-    title="Nest Learning Thermostat"
-    description="Un termostato que aprende tus preferencias y programa tu hogar automáticamente para ahorrar energía."
-    imageUrl="/img/google-nest.webp"
-    idModal="my_modal_3"
-    sub1="Ahorro de energía: "
-    sub2="Conectividad: "
-    sub3="Control remoto: "
-    item1="Aprende tus preferencias y programa tu hogar automáticamente para ahorrar energía."
-    item2="Funciona con la mayoría de los sistemas de calefacción y aire acondicionado."
-    item3="Controla desde tu teléfono inteligente o tableta."
-    client:load
-  />
-  <ThreeDCardDemo
-    title="Yale Assure Lock"
-    description="Una cerradura inteligente que puedes bloquear y desbloquear desde tu teléfono inteligente, con tu voz o con tu huella digital."
-    imageUrl="/img/Yale-Assure-Lock-SL-Cerradura-de-puerta-con-pantalla-tactil-sin-llave.jpg"
-    idModal="my_modal_4"
-    sub1="Acceso sin llave: "
-    sub2="Seguridad: "
-    sub3="Integración: "
-    item1="Bloquea y desbloquea tu puerta con tu teléfono inteligente, voz o huella digital."
-    item2="Diseño resistente a la intemperie y mecanismos de seguridad avanzados."
-    item3="Compatible con Amazon Alexa, Google Assistant y Apple HomeKit."
-    client:load
-  />
+<section>
+  <div>
+    <h2 class="flex justify-center max-md:text-3xl  text-5xl font-bold text-white ">Actuadores</h2>
+    <div class="max-lg:grid-cols-1 max-lg:gap-4 grid grid-cols-2 gap-8">
+      <ThreeDCardDemo
+        title="Amazon Echo"
+        description="Un altavoz inteligente que permite controlar dispositivos inteligentes con tu voz, reproducir música, configurar alarmas y más."
+        imageUrl="/img/Domotica-con-alexa-asistentes.png"
+        idModal="my_modal_1"
+        sub1="Voz: "
+        sub2="Conectividad: "
+        sub3="Diseño: "
+        item1="Controla tu hogar inteligente con tu voz, reproduce música, configura alarmas y más."
+        item2="Wi-Fi y Bluetooth para una experiencia fluida."
+        item3="Elegante y compacto, se adapta a cualquier estilo de decoración."
+        client:load
+      />
+      <ThreeDCardDemo
+        title="Google Nest Hub"
+        description="Una pantalla inteligente que te permite controlar dispositivos inteligentes, ver videos, configurar alarmas y más."
+        imageUrl="/img/Domotica-con-google-home-asistentes.png"
+        idModal="my_modal_2"
+        sub1="Voz: "
+        sub2="Conectividad: "
+        sub3="Diseño: "
+        item1="Información: Muestra información útil como el clima, las noticias y tu calendario."
+        item2="Control: Controla dispositivos inteligentes, reproduce videos y configura alarmas."
+        item3="Asistente de voz: Integrado con Google Assistant para comandos de voz intuitivos."
+        client:load
+      />
+      <ThreeDCardDemo
+        title="Nest Learning Thermostat"
+        description="Un termostato que aprende tus preferencias y programa tu hogar automáticamente para ahorrar energía."
+        imageUrl="/img/google-nest.webp"
+        idModal="my_modal_3"
+        sub1="Ahorro de energía: "
+        sub2="Conectividad: "
+        sub3="Control remoto: "
+        item1="Aprende tus preferencias y programa tu hogar automáticamente para ahorrar energía."
+        item2="Funciona con la mayoría de los sistemas de calefacción y aire acondicionado."
+        item3="Controla desde tu teléfono inteligente o tableta."
+        client:load
+      />
+      <ThreeDCardDemo
+        title="Yale Assure Lock"
+        description="Una cerradura inteligente que puedes bloquear y desbloquear desde tu teléfono inteligente, con tu voz o con tu huella digital."
+        imageUrl="/img/Yale-Assure-Lock-SL-Cerradura-de-puerta-con-pantalla-tactil-sin-llave.jpg"
+        idModal="my_modal_4"
+        sub1="Acceso sin llave: "
+        sub2="Seguridad: "
+        sub3="Integración: "
+        item1="Bloquea y desbloquea tu puerta con tu teléfono inteligente, voz o huella digital."
+        item2="Diseño resistente a la intemperie y mecanismos de seguridad avanzados."
+        item3="Compatible con Amazon Alexa, Google Assistant y Apple HomeKit."
+        client:load
+      />
+    </div>
+  </div>
+  <div>
+    <h2 class="flex justify-center max-md:text-3xl  text-5xl font-bold text-white">Sensores</h2>
+    <div class="max-lg:grid-cols-1 max-lg:gap-4 grid grid-cols-2 gap-8">
+      <ThreeDCardDemo
+        title="Philips Hue Motion Sensor"
+        description="Un sensor de movimiento que detecta la presencia en una habitación y puede activar otros dispositivos inteligentes."
+        imageUrl="/img/philips.jpg"
+        idModal="my_modal_5"
+        sub1="Detección: "
+        sub2="Conectividad: "
+        sub3="Instalación: "
+        item1="Detecta movimiento para activar luces, alarmas y otros dispositivos inteligentes."
+        item2="Compatible con Zigbee para una integración fácil y confiable."
+        item3="Fácil de instalar en cualquier habitación o espacio."
+        client:load
+      />
+      <ThreeDCardDemo
+        title="Aqara Temperature and Humidity Sensor"
+        description="Un sensor que mide la temperatura y la humedad del ambiente para optimizar el confort y la eficiencia energética."
+        imageUrl="/img/Temperature-and-Humidity-Sensor-Scene.jpg"
+        idModal="my_modal_6"
+        sub1="Mediciones: "
+        sub2="Conectividad: "
+        sub3="Integración: "
+        item1="Proporciona mediciones precisas de temperatura y humedad."
+        item2="Conectividad Zigbee para una integración sencilla."
+        item3="Compatible con sistemas de calefacción y refrigeración inteligentes."
+        client:load
+      />
+      <ThreeDCardDemo
+        title="Eve Door & Window Sensor"
+        description="Un sensor que detecta la apertura y cierre de puertas y ventanas, mejorando la seguridad de tu hogar."
+        imageUrl="/img/eveDoor.jpg"
+        idModal="my_modal_7"
+        sub1="Detección: "
+        sub2="Conectividad: "
+        sub3="Alerta: "
+        item1="Detecta la apertura y cierre de puertas y ventanas."
+        item2="Funciona con Zigbee para una integración rápida y efectiva."
+        item3="Envía alertas inmediatas a tu teléfono inteligente."
+        client:load
+      />
+      <ThreeDCardDemo
+        title="Fibaro Flood Sensor"
+        description="Un sensor que detecta la presencia de agua en áreas propensas a fugas, ayudando a prevenir daños por agua."
+        imageUrl="/img/Fibaro.jpg"
+        idModal="my_modal_8"
+        sub1="Detección: "
+        sub2="Conectividad: "
+        sub3="Alertas: "
+        item1="Detecta la presencia de agua y posibles fugas."
+        item2="Conectividad Z-Wave para una integración confiable."
+        item3="Envía alertas instantáneas a tu dispositivo móvil."
+        client:load
+      />
+    </div>
+  </div>
 </section>
